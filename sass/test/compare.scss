@@ -1,0 +1,115 @@
+$red: #FF4C4C;
+$yellow: #FFD700;
+$green:#4CAF50;
+$blu:#007BFF;
+$blu-dark: #0056b3;
+
+ul {
+    list-style-type: none;
+  }
+  
+
+  .body-compare{
+    margin: 0;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+   // font-weight: <weight>;
+    font-style: normal;
+    background-color: #bdb1b1;/* Резервний фон */
+      
+    //background-image: url("../../img/bg-compare.jpeg"); /* Картинка-фон */
+    background-repeat: repeat; /* Замощення */
+    background-position: top left; /* Початок з верхнього лівого кута */
+    background-size: auto; /* Залишає оригінальний розмір картинки */
+  }
+
+ 
+
+  .section-exercises{
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  
+     
+  }
+  .exercise-item{
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr 0.5fr 1fr;
+  grid-template-rows: repeat(1, 30px); 
+  align-items: center;
+  gap: 10px;
+
+ 
+  }
+  
+.first-number, 
+.second-number{
+  
+  border: none;
+  text-align: center;
+}
+
+.wrapper-exercises{
+padding: 20px;
+background-color: white;
+}
+
+  .operator{
+  
+    padding: 0;
+    margin: 0;
+    width: 25px;
+    height: 25px;
+    border: none;
+    border-radius: 4px;
+    align-items: center;
+    
+    cursor: pointer;
+    transition: transform 250ms ease-in-out;
+  }
+.button-check{
+  padding: 0;
+  margin: 0;
+  width: 50px;
+  height: 25px;
+  border: none;
+  border-radius: 4px;
+ 
+  cursor: pointer;
+  transition: transform 250ms ease-in-out;
+  &:hover{
+    transform: scale(1.2);
+    
+  }
+  &:focus{
+    border-radius: 6px;
+  }
+}
+
+ .reset{
+    padding: 0;
+    margin: 0;
+    width: 150px;
+    height: 25px;
+ 
+    border-radius: 4px;
+    background-color: $blu;
+    cursor: pointer;
+    transition: transform 250ms ease-in-out;
+    &:hover{
+      transform: scale(1.2);
+      background-color: $blu-dark;
+    }
+    &:focus{
+      border-radius: 6px;
+    }
+  }
+
+  .operator:hover, .operator:focus {
+    transform: scale(1.2);
+    background-color: $yellow;
+  
+  }
+

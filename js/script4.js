@@ -168,7 +168,7 @@
 
          
           const script = document.createElement("script");
-          script.src = "/js/animation1.js";
+          script.src = "../js/animation1.js";
           script.type = "module";
           document.body.appendChild(script);
     
@@ -176,7 +176,7 @@
             location.reload(); 
              
       
-          }, 7000);
+          }, 10000);
         }
       },
     
